@@ -13,8 +13,8 @@ import { DataProvider } from "./context/DataContext";
 function App() {
   return (
     <div className="App">
+      <Header title="React JS Blog"></Header>
       <DataProvider>
-        <Header title="React JS Blog"></Header>
         <Nav></Nav>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
@@ -24,8 +24,8 @@ function App() {
           <Route path="/about" element={<About></About>}></Route>
           <Route path="*" element={<Missing></Missing>}></Route>
         </Routes>
-        <Footer></Footer>
       </DataProvider>
+      <Footer></Footer>
     </div>
   );
 }
